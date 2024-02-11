@@ -20,6 +20,7 @@ def load_image(latitude, longitude,date):
 
     time = datetime.now()
     date_n = time.strftime("%Y-%m-%d")
+    
     # Создание запроса для получения изображения в формате TIFF
     request = SentinelHubRequest(
         evalscript="""
