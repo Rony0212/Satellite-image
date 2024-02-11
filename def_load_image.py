@@ -9,6 +9,7 @@ config.sh_client_secret = '736oAZLltjnCM95OWxql4CfZ7M25jC4k'
 
 #Функция для загрузки изображения с сервиса Sentinel Hub
 def load_image(latitude, longitude,date):
+    
     # Координаты и размеры области 
     bbox = BBox((latitude, longitude, latitude+1, longitude+1), crs=CRS.WGS84)
 
